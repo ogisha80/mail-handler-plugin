@@ -20,5 +20,20 @@
 
         <context>mail-handler-demo</context>
     </web-resource>
+
+    <message-handler i18n-name-key="demohandler.name"
+                     key="demoHandler" class="com.example.plugins.tutorial.jira.mailhandlerdemo.DemoHandler"
+                     add-edit-url="/secure/admin/EditDemoHandlerDetails!default.jspa" weight="0"/>
+
+    <webwork1 key="actions" name="Actions" class="java.lang.Object">
+        <actions>
+            <action name="com.example.plugins.tutorial.jira.mailhandlerdemo.EditDemoHandlerDetailsWebAction"
+                    alias="EditDemoHandlerDetails"
+                    roles-required="admin">
+                <view name="input">/view/editDemoHandlerDetails.vm</view>
+                <view name="securitybreach">/secure/views/securitybreach.jsp</view>
+            </action>
+        </actions>
+    </webwork1>
     
 </atlassian-plugin>
