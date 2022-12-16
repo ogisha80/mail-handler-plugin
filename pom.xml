@@ -105,7 +105,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>5.2.1.RELEASE</version>
+            <version>5.2.20.RELEASE</version>
         </dependency>
 
         <!-- Uncomment to use TestKit in your project. Details at https://bitbucket.org/atlassian/jira-testkit -->
